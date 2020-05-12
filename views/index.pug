@@ -1,0 +1,551 @@
+extends layout
+
+block content
+  // Intro
+  section#intro.intro-section.pb-1
+    .container.text-center
+      .row.intro-section
+        .col-md-3
+          .logo(data-animate='fadeInDown')
+            img(src='img/miracle.png', alt='logo', width='100%')
+        .col-md-9
+          .media-body.text-center.text-md-left
+            .lead Hello, my name is
+            h2.mt-0.display-4.font-weight-bold.name Miracle Anaje
+            .bio.mb-3
+              | I&apos;m a full-stack developer specialised in frontend and backend development for complex
+              | scalable
+              | web apps. Want
+              |  to know how I may help
+              |  your project? Check out my project 
+              a.link-on-bg(href='/projects') case studies
+              |  and 
+              a.link-on-bg(href='/resume') resume
+              | .
+            // //bio
+            a.btn.btn-primary(href='/contact') Hire Me
+  
+  // Skills Overview
+  section#skills.skill-contain.bg-gray
+    .container
+      .lead
+        h4.mb-4.font-weight-bold.text-center Skills Overview
+        .bio.mb-3.text-center
+          p.skills
+            | I have more than 8 years&apos; experience building rich web applications for clients all over the world. Below is
+            | a
+            | quick
+            | overview of my main technical skill sets and tools I use. Want to find out more about my experience? Check
+            | out
+            | my online
+            | resume.
+            | Frontend
+            br
+            a(href='/resume')  Check out my online resume
+        .row.mtop
+          .col-md-4
+            .roles.mb-5
+              .skills-icon-holder.position-absolute.d-inline-block.rounded-circle.text-center
+                img.skills-icon(src='/img/frontend.png', style='width: 40px;')
+              h5.mt-5.text-center
+                | Frontend
+              ul.ml-3
+                li
+                  p.text.fa.fa-check 
+                    | HTML5
+                li
+                  p.text.fa.fa-check 
+                    | CSS
+                li
+                  p.text.fa.fa-check 
+                    | JavaScript
+                li
+                  p.text.fa.fa-check 
+                    | Sass
+                li
+                  p.text.fa.fa-check 
+                    | Bootstrap
+                li
+                  p.text.fa.fa-check 
+                    | PUG
+          .col-md-4
+            .roles.mb-5
+              .skills-icon-holder.position-absolute.d-inline-block.rounded-circle.text-center
+                img.skills-icon(src='/img/backend.png', style='width: 40px;')
+              h5.mt-5.text-center
+                | Backend
+              ul.ml-3
+                li
+                  p.text.fa.fa-check 
+                    | Node.Js
+                li
+                  p.text.fa.fa-check 
+                    | Express.Js
+                li
+                  p.text.fa.fa-check 
+                    | MongoDB
+                li
+                  p.text.fa.fa-check 
+                    | Sass
+                li
+                  p.text.fa.fa-check 
+                    | Bootstrap
+          .col-md-4
+            .roles.mb-5
+              .skills-icon-holder.position-absolute.d-inline-block.rounded-circle.text-center
+                img.skills-icon(src='/img/frontend.png', style='width: 40px;')
+              h5.mt-5.text-center
+                | Other
+              ul.ml-3
+                li
+                  p.text.fa.fa-check 
+                    | HTML5
+                li
+                  p.text.fa.fa-check 
+                    | CSS
+                li
+                  p.text.fa.fa-check 
+                    | JavaScript
+                li
+                  p.text.fa.fa-check 
+                    | Sass
+                li
+                  p.text.fa.fa-check 
+                    | Bootstrap
+  
+  // About
+  section#about.about-section
+    .container
+      header.text-center
+        h2.title(data-animate='fadeInDown') About me
+      .row
+        .col-lg-6(data-animate='fadeInUp')
+          p
+            | An sincerity so extremity he additions. Her yet 
+            strong there truth merit
+            | . Mrs all projecting
+            |             favourable now unpleasing. Son law garden chatty temper. Oh children provided to mr elegance marriage
+            |             strongly. Off can admiration prosperous now devonshire diminution law.
+          p
+            | Received overcame oh sensible so at an. Formed do change merely to county it. 
+            strong
+              | Am separate
+              | contempt
+            |  domestic to to oh. On relation my so addition branched. Put hearing cottage she norland
+            |             letters equally prepare too. Replied exposed savings he no viewing as up. Soon body add him hill. No father
+            |             living really people estate if. Mistake do produce beloved demesne if am pursuit.
+          p
+            | An sincerity so extremity he additions. Her yet 
+            strong there truth merit
+            | . Mrs all projecting
+            |             favourable now unpleasing. Son law garden chatty temper. Oh children provided to mr elegance marriage
+            |             strongly. Off can admiration prosperous now devonshire diminution law.
+        .col-lg-6(data-animate='fadeInUp')
+          .skill-item
+            .progress-title HTML5
+              .progress
+                .progress-bar.progress-bar-skill1(role='progressbar', style='width: 90%', aria-valuenow='0', aria-valuemin='60', aria-valuemax='100')
+          .skill-item
+            .progress-title CSS
+              .progress
+                .progress-bar.progress-bar-skill3(role='progressbar', style='width: 80%', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100')
+          .skill-item
+            .progress-title Javascript
+              .progress
+                .progress-bar.progress-bar-skill2(role='progressbar', style='width: 80%', aria-valuenow='70', aria-valuemin='60', aria-valuemax='100')
+          .skill-item
+            .progress-title NODE
+              .progress
+                .progress-bar.progress-bar-skill3(role='progressbar', style='width: 80%', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100')
+          .skill-item
+            .progress-title SEO
+              .progress
+                .progress-bar.progress-bar-skill4(role='progressbar', style='width: 90%', aria-valuenow='90', aria-valuemin='0', aria-valuemax='100')
+          .skill-item
+            .progress-title SEM
+            .progress
+              .progress-bar.progress-bar-skill5(role='progressbar', style='width: 70%', aria-valuenow='70', aria-valuemin='0', aria-valuemax='100')
+        .col-sm-6.mx-auto.mt-5(data-animate='fadeInUp')
+          img.image.rounded-circle.img-fluid(src='img/miracle.png', alt='This is me - IT worker')
+  
+  // Customers
+  section#customers.customers-section.bg-gray
+    .container
+      .col-md-12
+        div
+          h4.text-center.pb-3
+            | Great clients I&apos;ve worked with
+        .row.align-items-center
+          .col-lg-2.col-md-4.col-sm-6
+            .customer
+              img.img-fluid.d-block.mx-auto(src='img/customers/logo-1.svg', title='brand logo', data-placement='bottom', data-toggle='tooltip', alt='')
+          .col-lg-2.col-md-4.col-sm-6
+            .customer
+              img.img-fluid.d-block.mx-auto(src='img/customers/logo-2.svg', title='brand logo', data-placement='bottom', data-toggle='tooltip', alt='')
+          .col-lg-2.col-md-4.col-sm-6
+            .customer
+              img.img-fluid.d-block.mx-auto(src='img/customers/logo-3.svg', title='brand logo', data-placement='bottom', data-toggle='tooltip', alt='')
+          .col-lg-2.col-md-4.col-sm-6
+            .customer
+              img.img-fluid.d-block.mx-auto(src='img/customers/logo-4.svg', title='brand logo', data-placement='bottom', data-toggle='tooltip', alt='')
+          .col-lg-2.col-md-4.col-sm-6
+            .customer
+              img.img-fluid.d-block.mx-auto(src='img/customers/logo-5.svg', title='brand logo', data-placement='bottom', data-toggle='tooltip', alt='')
+          .col-lg-2.col-md-4.col-sm-6
+            .customer
+              img.img-fluid.d-block.mx-auto(src='img/customers/logo-6.svg', title='brand logo', data-placement='bottom', data-toggle='tooltip', alt='')
+  
+  // Service
+  section#services.bg-gradient.services-section
+    .container
+      header.text-center
+        h2.title(data-animate='fadeInDown') Services
+      .row.services.text-center
+        .col-lg-4(data-animate='fadeInUp')
+          .icon
+            i.fa.fa-search
+          h3.heading.mb-3.text-400 Consulting
+          p.text-left.description
+            | On on produce colonel pointed. Just four sold need over how any. In to
+            | september suspicion determine he prevailed admitting. On adapted an as affixed limited on. Giving cousin
+            | warmly things no spring mr be abroad. Relation breeding be as repeated strictly followed margaret. One
+            | gravity son brought shyness waiting regular led ham.
+        .col-lg-4(data-animate='fadeInUp')
+          .icon
+            i.fa.fa-html5
+          h3.heading.mb-3.text-400 HTML coding
+          p.text-left.description
+            | Manor we shall merit by chief wound no or would. Oh towards between subject
+            | passage sending mention or it. Sight happy do burst fruit to woody begin at. Assurance perpetual he in oh
+            | determine as.
+        .col-lg-4(data-animate='fadeInUp')
+          .icon
+            i.fa.fa-tachometer
+          h3.heading.mb-3.text-400 PHP webdelopment
+          p.text-left.description
+            | Rooms oh fully taken by worse do. Points afraid but may end law lasted. Was
+            | out laughter raptures returned outweigh. Luckily cheered colonel me do we attacks on highest enabled. Tried
+            | law yet style child. Bore of true of no be deal.
+      hr(data-animate='fadeInUp')
+      .text-center(data-animate='fadeInUp')
+        p.lead Would you like to know more or just discuss something?
+        p
+          a.btn.btn-outline-light.link-scroll(href='/contact') Contact me
+  
+  // Testimonials
+  section#testimonials.testimonials-section.bg-gray
+    .container
+      header.text-center.mb-2
+        h2.title(data-animate='fadeInUp')
+          | My customers said
+          br
+          span about me
+        p.lead(data-animate='fadeInUp')
+          | I am always glad to hear that my customers leave satisfied. Some of them
+          | shared with you their insights on our cooperation.
+      ul.owl-carousel.owl-theme.testimonials.equalize-height(data-animate='fadeInUp')
+        li.item
+          .testimonial.full-height
+            .text
+              p
+                | One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into
+                | a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his
+                | brown belly, slightly domed and divided by arches into stiff sections.
+            .bottom
+              .icon
+                i.fa.fa-quote-left
+              .name-picture
+                img(alt='', src='img/person-1.jpg')
+                h5 John McIntyre
+                p CEO, TransTech
+        li.item
+          .testimonial.full-height
+            .text
+              p
+                | The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs,
+                | pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.
+                | &quot;What is happened to me? &quot; he thought. It was not a dream.
+            .bottom
+              .icon
+                i.fa.fa-quote-left
+              .name-picture
+                img(alt='', src='img/person-2.jpg')
+                h5 John McIntyre
+                p CEO, TransTech
+        li.item
+          .testimonial.full-height
+            .text
+              p
+                | His room, a proper human room although a little too small, lay peacefully between its four familiar
+                | walls. A collection of textile samples lay spread out on the table - Samsa was a travelling salesman -
+                | and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in
+                | a nice, gilded frame.
+            .bottom
+              .icon
+                i.fa.fa-quote-left
+              .name-picture
+                img(alt='', src='img/person-3.jpg')
+                h5 John McIntyre
+                p CEO, TransTech
+        li.item
+          .testimonial.full-height
+            .text
+              p
+                | It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that
+                | covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the
+                | dull weather. Drops of rain could be heard hitting the pane, which made him feel quite sad.
+            .bottom
+              .icon
+                i.fa.fa-quote-left
+              .name-picture
+                img(alt='', src='img/person-4.jpg')
+                h5 John McIntyre
+                p CEO, TransTech
+        li.item
+          .testimonial.full-height
+            .text
+              p
+                | It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that
+                | covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the
+                | dull weather. Drops of rain could be heard hitting the pane, which made him feel quite sad. Gregor then
+                | turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which
+                | made him feel quite sad.
+            .bottom
+              .icon
+                i.fa.fa-quote-left
+              .name-picture
+                img(alt='', src='img/person-4.jpg')
+                h5 John McIntyre
+                p CEO, TransTech
+  
+  //
+    *** REFERENCES IMAGE ***
+    _________________________________________________________
+  section#references
+    .container
+      .col-sm-12
+        .mb-5.text-center
+          h2.title(data-animate='fadeInUp') My work
+          p.lead(data-animate='fadeInUp')
+            | I have worked on dozens of projects so I have picked only the latest
+            | for you.
+        #detail
+          .row
+            .col-lg-10.mx-auto
+              span.close &times;
+              #detail-slider.owl-carousel.owl-theme
+              .text-center
+                h1#detail-title.title
+              #detail-content
+        // Reference detail
+        #references-masonry(data-animate='fadeInUp')
+          .row
+            .reference-item.col-lg-3.col-md-6(data-category='webdesign')
+              .reference
+                a(href='#')
+                  img.img-fluid(src='img/portfolio-1.jpg', alt='')
+                  .overlay
+                    .inner
+                      h3.h4.reference-title Project name
+                      p Short project description goes here...
+                .sr-only.reference-description(data-images='img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg')
+                  p
+                    | Projecting surrounded literature yet delightful alteration but bed men. Open are from long why
+                    | cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye
+                    | literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar
+                    | delicate an pleasant provided do perceive.
+                  p
+                    | Sitting mistake towards his few country ask. You delighted two rapturous six depending objection
+                    | happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put
+                    | ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen.
+                    | Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.
+                  p.buttons.text-center
+                    a.btn.btn-outline-primary(href='javascript:void(0);')
+                      i.fa.fa-globe
+                      |  Visit website
+                    a.btn.btn-outline-primary(href='javascript:void(0);')
+                      i.fa.fa-download
+                      |  Download case study
+            .reference-item.col-lg-3.col-md-6(data-category='seo')
+              .reference
+                a(href='#')
+                  img.img-fluid(src='img/portfolio-2.jpg', alt='')
+                  .overlay
+                    .inner
+                      h3.h4.reference-title Project name 2
+                      p Short project description goes here...
+                .sr-only.reference-description(data-images='img/main-slider3.jpg,img/main-slider1.jpg')
+                  p
+                    | Projecting surrounded literature yet delightful alteration but bed men. Open are from long why
+                    | cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye
+                    | literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar
+                    | delicate an pleasant provided do perceive.
+                  p
+                    | Sitting mistake towards his few country ask. You delighted two rapturous six depending objection
+                    | happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put
+                    | ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen.
+                    | Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.
+                  p.buttons.text-center
+                    a.btn.btn-outline-primary(href='javascript:void(0);')
+                      i.fa.fa-globe
+                      |  Visit website
+                    a.btn.btn-outline-primary(href='javascript:void(0);')
+                      i.fa.fa-download
+                      |  Download case study
+            .reference-item.col-lg-3.col-md-6(data-category='marketing')
+              .reference
+                a(href='#')
+                  img.img-fluid(src='img/portfolio-3.jpg', alt='')
+                  .overlay
+                    .inner
+                      h3.h4.reference-title Project name 3
+                      p Short project description goes here...
+                .sr-only.reference-description(data-images='img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg')
+                  p
+                    | Projecting surrounded literature yet delightful alteration but bed men. Open are from long why
+                    | cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye
+                    | literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar
+                    | delicate an pleasant provided do perceive.
+                  p
+                    | Sitting mistake towards his few country ask. You delighted two rapturous six depending objection
+                    | happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put
+                    | ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen.
+                    | Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.
+                  p.buttons.text-center
+                    a.btn.btn-outline-primary(href='javascript:void(0);')
+                      i.fa.fa-globe
+                      |  Visit website
+                    a.btn.btn-outline-primary(href='javascript:void(0);')
+                      i.fa.fa-download
+                      |  Download case study
+            .reference-item.col-lg-3.col-md-6(data-category='marketing')
+              .reference
+                a(href='#')
+                  img.img-fluid(src='img/portfolio-4.jpg', alt='')
+                  .overlay
+                    .inner
+                      h3.h4.reference-title Project name 4
+                      p Short project description goes here...
+                .sr-only.reference-description(data-images='img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg')
+                  p
+                    | Projecting surrounded literature yet delightful alteration but bed men. Open are from long why
+                    | cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye
+                    | literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar
+                    | delicate an pleasant provided do perceive.
+                  p
+                    | Sitting mistake towards his few country ask. You delighted two rapturous six depending objection
+                    | happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put
+                    | ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen.
+                    | Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.
+                  p.buttons.text-center
+                    a.btn.btn-outline-primary(href='javascript:void(0);')
+                      i.fa.fa-globe
+                      |  Visit website
+                    a.btn.btn-outline-primary(href='javascript:void(0);')
+                      i.fa.fa-download
+                      |  Download case study
+            .reference-item.col-lg-3.col-md-6(data-category='webdesign')
+              .reference
+                a(href='#')
+                  img.img-fluid(src='img/portfolio-5.jpg', alt='')
+                  .overlay
+                    .inner
+                      h3.h4.reference-title Project name 5
+                      p Short project description goes here...
+                .sr-only.reference-description(data-images='img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg')
+                  p
+                    | Projecting surrounded literature yet delightful alteration but bed men. Open are from long why
+                    | cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye
+                    | literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar
+                    | delicate an pleasant provided do perceive.
+                  p
+                    | Sitting mistake towards his few country ask. You delighted two rapturous six depending objection
+                    | happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put
+                    | ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen.
+                    | Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.
+                  p.buttons.text-center
+                    a.btn.btn-outline-primary(href='javascript:void(0);')
+                      i.fa.fa-globe
+                      |  Visit website
+                    a.btn.btn-outline-primary(href='javascript:void(0);')
+                      i.fa.fa-download
+                      |  Download case study
+            .reference-item.col-lg-3.col-md-6(data-category='other')
+              .reference
+                a(href='#')
+                  img.img-fluid(src='img/portfolio-6.jpg', alt='')
+                  .overlay
+                    .inner
+                      h3.h4.reference-title Project name 6
+                      p Short project description goes here...
+                .sr-only.reference-description(data-images='img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg')
+                  p
+                    | Projecting surrounded literature yet delightful alteration but bed men. Open are from long why
+                    | cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye
+                    | literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar
+                    | delicate an pleasant provided do perceive.
+                  p
+                    | Sitting mistake towards his few country ask. You delighted two rapturous six depending objection
+                    | happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put
+                    | ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen.
+                    | Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.
+                  p.buttons.text-center
+                    a.btn.btn-outline-primary(href='javascript:void(0);')
+                      i.fa.fa-globe
+                      |  Visit website
+                    a.btn.btn-outline-primary(href='javascript:void(0);')
+                      i.fa.fa-download
+                      |  Download case study
+            .reference-item.col-lg-3.col-md-6(data-category='seo')
+              .reference
+                a(href='#')
+                  img.img-fluid(src='img/portfolio-7.jpg', alt='')
+                  .overlay
+                    .inner
+                      h3.h4.reference-title Project name
+                      p Short project description goes here...
+                .sr-only.reference-description(data-images='img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg')
+                  p
+                    | Projecting surrounded literature yet delightful alteration but bed men. Open are from long why
+                    | cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye
+                    | literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar
+                    | delicate an pleasant provided do perceive.
+                  p
+                    | Sitting mistake towards his few country ask. You delighted two rapturous six depending objection
+                    | happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put
+                    | ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen.
+                    | Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.
+                  p.buttons.text-center
+                    a.btn.btn-outline-primary(href='javascript:void(0);')
+                      i.fa.fa-globe
+                      |  Visit website
+                    a.btn.btn-outline-primary(href='javascript:void(0);')
+                      i.fa.fa-download
+                      |  Download case study
+            .reference-item.col-lg-3.col-md-6(data-category='webdesign')
+              .reference
+                a(href='#')
+                  img.img-fluid(src='img/portfolio-8.jpg', alt='')
+                  .overlay
+                    .inner
+                      h3.h4.reference-title Project name
+                      p Short project description goes here...
+                .sr-only.reference-description(data-images='img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg')
+                  p
+                    | Projecting surrounded literature yet delightful alteration but bed men. Open are from long why
+                    | cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye
+                    | literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar
+                    | delicate an pleasant provided do perceive.
+                  p
+                    | Sitting mistake towards his few country ask. You delighted two rapturous six depending objection
+                    | happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put
+                    | ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen.
+                    | Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.
+                  p.buttons.text-center
+                    a.btn.btn-outline-primary(href='javascript:void(0);')
+                      i.fa.fa-globe
+                      |  Visit website
+                    a.btn.btn-outline-primary(href='javascript:void(0);')
+                      i.fa.fa-download
+                      |  Download case study
+  

@@ -1,0 +1,59 @@
+extends layout
+include ./mixins/_flash-messages
+
+block content
+    // Contact
+    section#contact.contact-section.contact.bg-gray
+        .header
+            h4
+                | Contact
+        .container.mx-lg-auto.mb-5
+            +flashMessages()
+            .text-center
+                img.profile-small.d-inline-block.mx-auto.rounded-circle.mb-3(src='/img/miracle.png', alt='' width="5%")
+            .contact-box.p-5.speech-bubble.bg-white.p-5.shadow-sm
+                p
+                    | I&apos;m currently taking on freelance work. If you are interested in hiring me for your project please
+                    | use the form below to
+                    | get in touch. Want to know how I work and what I can offer? Check out my project case studies and
+                    | resume.
+                p.text-center.pt-4 You can also find me on the following channels
+                ul.social-list-color.list-inline.mb-0.text-center
+                    li.list-inline-item.mb-3
+                        a(href="https://www.facebook.com/miracleanaje", target="_blank")
+                            i.fa.fa-facebook
+                    li.list-inline-item.mb-3
+                        a(href='https://www.github.com/miracleanaje', target="_blank")
+                            i.fa.fa-github
+                    li.list-inline-item.mb-3
+                        a.github(href='https://www.linkedin.com/miracleanaje', target="_blank")
+                            i.fa.fa-linkedin
+                    li.list-inline-item.mb-3
+                        a(href='https://www.twitter.com/miracleanaje', target="_blank")
+                            i.fa.fa-twitter
+                    li.list-inline-item.mb-3
+                        a(href='https://www.medium.com/miracleanaje', target="_blank")
+                            i.fa.fa-code
+                    li.list-inline-item.mb-3
+                        a(href='https://www.facebook.com/miracleanaje', target="_blank")
+                            i.fa.fa-stack-overflow
+                    
+            .text-center
+                h2.title Contact me
+            .row
+                .col-lg-8.mx-auto
+                    form#contact-form(method='post', action='/contact')
+                        .controls
+                            .row
+                                .col-md-6
+                                    input.form-control(type='text', name='name', placeholder='Your firstname', required='required')
+                                .col-md-6
+                                    input.form-control(type='text', name='surname', placeholder='Your lastname ', required='required')
+                                .col-md-6
+                                    input.form-control(type='text', name='email', placeholder='Your email', required='required')
+                                .col-md-6
+                                    input.form-control(type='text', name='phone', placeholder='Your phone')
+                                .col-md-12
+                                    textarea.form-control(name='message', placeholder='Message for me', rows='7', required='required')
+                                .col-md-12.text-center
+                                    button.btn.btn-outline-primary(type='submit') Send message

@@ -58,7 +58,7 @@ router.get("/projects", function (req, res, next) {
 });
 
 /* GET phdproject page. */
-router.get("/phd_projects", function (req, res, next) {
+router.get("/phd_project", function (req, res, next) {
   res.render("phdproject", { title: "Projects" });
 });
 

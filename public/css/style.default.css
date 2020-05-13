@@ -170,8 +170,9 @@ a.nav-icons {
   text-decoration: none;
 }
 
-.icon-nav li{
-  display: inline;
+.icon-nav {
+  list-style: none;
+  flex-direction: row;
   font-size: 19px;
 }
 
@@ -772,7 +773,7 @@ nav.navbar a.nav-icons:hover {
   font-size: 20px;
 }
 
-.res-mail span{
+.res-mail span {
   font-size: 18px;
 }
 

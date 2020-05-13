@@ -62,6 +62,18 @@ router.get("/phd_project", function (req, res, next) {
   res.render("phdproject", { title: "Projects" });
 });
 
+
+/* GET weddingproject page. */
+router.get("/weddingshop_project", function (req, res, next) {
+  res.render("weddingshop_project", { title: "Projects" });
+});
+
+/* GET scrollcardproject page. */
+router.get("/scrollcard_project", function (req, res, next) {
+  res.render("scrollcard_project", { title: "Projects" });
+});
+
+
 /* GET resume page. */
 router.get("/resume", function (req, res, next) {
   res.render("resume", { title: "My Resume" });
